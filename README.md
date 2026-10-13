@@ -90,7 +90,7 @@ The tests check that all 96 devices are present, that search and grouping behave
 | `declarativeNetRequestWithHostAccess` | Removes frame-blocking headers after you allow a site |
 | optional `<all_urls>` | Requested only when you click **Allow this site** |
 
-Casement does not add analytics, accounts, or its own servers. Favorites and recents stay in Chrome local storage.
+Casement does not add analytics, accounts, or its own servers. Favorites and recents stay in Chrome local storage. The [privacy policy](PRIVACY.md) describes this in full.
 
 ## Limits
 
