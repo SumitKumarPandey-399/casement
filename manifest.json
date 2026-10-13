@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Casement",
+  "version": "1.0.0",
+  "description": "Preview the current page at phone, tablet, laptop, and other screen sizes.",
+  "permissions": ["storage", "activeTab", "declarativeNetRequestWithHostAccess"],
+  "optional_host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Open Casement"
+  },
+  "commands": {
+    "open-casement": {
+      "suggested_key": {
+        "default": "Alt+Shift+C"
+      },
+      "description": "Open Casement for the current tab"
+    }
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Casement</title>
+    <link rel="stylesheet" href="studio.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="mark" aria-hidden="true"></span>
+        <div>
+          <strong>Casement</strong>
+          <p>Layout preview</p>
+        </div>
+      </div>
+      <label class="url-field">
+        <span class="visually-hidden">Page address</span>
+        <input id="page-url" type="url" spellcheck="false" placeholder="https://example.com">
+      </label>
+      <div class="tools">
+        <button id="rotate" type="button">Rotate</button>
+        <label>
+          Zoom
+          <select id="zoom">
+            <option value="fit">Fit</option>
+            <option value="0.5">50%</option>
+            <option value="0.75">75%</option>
+            <option value="1">100%</option>
+            <option value="1.25">125%</option>
+            <option value="1.5">150%</option>
+          </select>
+        </label>
+        <label class="check">
+          <input id="show-frame" type="checkbox" checked>
+          Frame
+        </label>
+      </div>
+    </header>
+
+    <div class="workspace">
+      <aside class="picker">
+        <label class="search">
+          <span class="visually-hidden">Search devices</span>
+          <input id="search" type="search" placeholder="Search devices" autocomplete="off">
+        </label>
+        <p id="search-meta" class="meta"></p>
+        <div id="results" class="results"></div>
+      </aside>
+
+      <main class="stage-wrap">
+        <div id="notice" class="notice" hidden></div>
+        <div id="stage" class="stage">
+          <div id="device-slot" class="device-slot">
+            <div id="device" class="device">
+              <iframe id="preview" title="Page preview" referrerpolicy="no-referrer"></iframe>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="studio.js"></script>
+  </body>
+</html>
